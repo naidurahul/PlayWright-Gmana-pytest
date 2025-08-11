@@ -6,8 +6,8 @@ from pages.Gmana_login_page import LoginPage
 def test_example(page: Page) -> None:
     login_page = LoginPage(page)
     page.goto("https://stg1.g-mana.live/app/login")
-    login_page.enter_email("rahul.naidu.stg1@g-mana.com")
-    login_page.enter_password("hX9^4wxmZUpgRMzL")
+    login_page.enter_email("<-email->")
+    login_page.enter_password("<-password->")
     login_page.click_login()
     
     page.get_by_role("link", name=" Slates").click()
